@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator-style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="content0" class="content">0</div>
+      <div class="buttons">
+        <button onclick="back()" id="back" class="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-arrow-left preview-icon"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="m12 8-4 4 4 4" />
+            <path d="M16 12H8" />
+          </svg>
+        </button>
+        <button onclick="del()" id="delete" class="button">AC</button>
+        <button onclick="persent()" id="persent" class="button">%</button>
+        <button onclick="Operator('/')" id="divide" class="button orange">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-divide preview-icon"
+          >
+            <circle cx="12" cy="6" r="1" />
+            <line x1="5" x2="19" y1="12" y2="12" />
+            <circle cx="12" cy="18" r="1" />
+          </svg>
+        </button>
+        <button onclick="clickButton(7)" id="seven" class="button blackGray">
+          7
+        </button>
+        <button onclick="clickButton(8)" id="eight" class="button blackGray">
+          8
+        </button>
+        <button onclick="clickButton(9)" id="nine" class="button blackGray">
+          9
+        </button>
+        <button onclick="Operator('x')" id="multiple" class="button orange">
+          x
+        </button>
+        <button onclick="clickButton(4)" id="four" class="button blackGray">
+          4
+        </button>
+        <button onclick="clickButton(5)" id="five" class="button blackGray">
+          5
+        </button>
+        <button onclick="clickButton(6)" id="six" class="button blackGray">
+          6
+        </button>
+        <button onclick="Operator('-')" id="minus" class="button orange">
+          -
+        </button>
+        <button onclick="clickButton(1)" id="one" class="button blackGray">
+          1
+        </button>
+        <button onclick="clickButton(2)" id="two" class="button blackGray">
+          2
+        </button>
+        <button onclick="clickButton(3)" id="three" class="button blackGray">
+          3
+        </button>
+        <button onclick="Operator('+')" id="plus" class="button orange">
+          +
+        </button>
+        <button onclick="swapSign()" id="swapSign" class="button blackGray">
+          &plusmn;
+        </button>
+        <button onclick="clickButton(0)" id="zero" class="button blackGray">
+          0
+        </button>
+        <button onclick="dot()" id="dot" class="button blackGray">.</button>
+        <button onclick="end()" id="end" class="button orange">=</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="snow.js"></script>
+  </body>
+</html>
